@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .inline-text {
+            display: inline-block;
+        }
+
+        #param, #area {
+            color: red;
+            margin: 0;
+            font-size: 22px;
+            display: inline-block;
+        }
+
+        p, input {
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Tính chu vi và diện tích hình tròn</h1>
+<input type="text" id="radius" placeholder="Nhập bán kính hình tròn">
+<button type="button" onclick="calc()">Bấm để tính</button>
+<br>
+<p class="inline-text">Chu vi hình tròn là: </p>
+<p id="param"></p>
+<br>
+<p class="inline-text">Diện tích hình tròn là: </p>
+<p id="area"></p>
+</body>
+</html>
