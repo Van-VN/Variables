@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency exchange</title>
+    <script src="index.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .inline-text, #result {
+            display: inline-block;
+        }
+
+        #result {
+            margin: 0;
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        select, input {
+            margin: 10px auto;
+        }
+
+        .actionBtn {
+            margin: 10px auto;
+            border: 1px solid black;
+            color: black;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 300;
+            width: 100%;
+            background-color: white;
+        }
+
+        article {
+            width: 500px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 10px 20px;
+            border: 2px solid black;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: black;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<article>
+<h1>Ứng dụng chuyển đổi tiền tệ</h1>
+<input type="text" id="amount" placeholder="Nhập số tiền muốn chuyển đổi" style="width: 100%; height: 22px;">
+<br>
+<select name="inputCurr" id="inputCurr">
+  <option value="VND">VND</option>
+  <option value="USD">USD</option>
+  <option value="EUR">EUR</option>
+</select>
+<label for="inputCurr"> <-- Chọn loại tiền đang có</label>
+<br>
+<select name="outputCurr" id="outputCurr">
+  <option value="VND">VND</option>
+  <option value="USD">USD</option>
+  <option value="EUR">EUR</option>
+</select>
+<label for="outputCurr"> <-- Chọn loại tiền muốn chuyển</label>
+<br>
+<button type="button" class="actionBtn" onclick="exchange()">Bấm để chuyển</button>
+<br>
+<p class="inline-text"><strong><em>Kết quả: </em></strong></p>
+<p id="result"></p>
+</article>
+</body>
+</html>
